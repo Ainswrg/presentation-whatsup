@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+    <style>
+      .container {
+        width: '100px'
+        height: '80px'
+        background-image: url(./assets/1.png)
+      }
+      .image {
+        width: '200px'
+        height: 'auto'
+      }
+    </style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          Enter idInstance and apiTokenInstance to authenticate in the application.
+            <img class="image" src="./assets/1.png" alt="">
+        </section>
+				<section>
+          Click addContact.
+          <img class="image" src="./assets/2.png" alt="">
+        </section>
+				<section>
+          Enter the number and click add.
+          <img class="image" src="./assets/3.png" alt="">
+        </section>
+				<section>
+          Enter the message
+          <img class="image" src="./assets/4.png" alt="">
+        </section>
+				<section>
+          Send it
+          <img class="image" src="./assets/5.png" alt="">
+        </section>
+				<section>
+          Get message
+          <img class="image" src="./assets/6.png" alt="">
+        </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
